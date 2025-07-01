@@ -1,36 +1,67 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import DevProfileDashboard from '../src/DevProfileDashboard';
+import { vi, beforeEach, afterEach } from 'vitest';
 
-global.fetch = jest.fn(() =>
-  Promise.resolve({
+// Mocking fetch globally
+beforeEach(() => {
+  global.fetch = vi.fn().mockResolvedValue({
     ok: true,
-    json: () => Promise.resolve([{ id: 1, name: 'test-repo', html_url: '#', description: 'Test Repo' }])
-  })
-);
+    json: async () => [
+      {
+        id: 1,
+        name: 'test-repo',
+        html_url: '#',
+        description: 'Test Repo',
+      },
+    ],
+  });
+});
+
+afterEach(() => {
+  vi.restoreAllMocks();
+});
 
 describe('DevProfileDashboard', () => {
   it('renders input and button', () => {
     render(<DevProfileDashboard />);
-    expect(screen.getByPlaceholderText(/github username/i)).toBeInTheDocument();
-    expect(screen.getByText(/fetch repos/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/Enter GitHub username/i)).toBeInTheDocument();
+    expect(screen.getByText(/Fetch Repos/i)).toBeInTheDocument();
   });
 
   it('fetches and displays repos on button click', async () => {
     render(<DevProfileDashboard />);
-    fireEvent.change(screen.getByPlaceholderText(/github username/i), { target: { value: 'testuser' } });
-    fireEvent.click(screen.getByText(/fetch repos/i));
+    const input = screen.getByPlaceholderText(/Enter GitHub username/i);
+    const button = screen.getByText(/Fetch Repos/i);
 
-    await waitFor(() => screen.getByText('test-repo'));
-    expect(screen.getByText('test-repo')).toBeInTheDocument();
+    fireEvent.change(input, { target: { value: 'testuser' } });
+    fireEvent.click(button);
+
+    await waitFor(
+      () => {
+        expect(screen.getByText('test-repo')).toBeInTheDocument();
+      },
+      { timeout: 2000 }
+    );
   });
 
   it('shows error for bad fetch', async () => {
-    fetch.mockImplementationOnce(() => Promise.resolve({ ok: false }));
-    render(<DevProfileDashboard />);
-    fireEvent.change(screen.getByPlaceholderText(/github username/i), { target: { value: 'invaliduser' } });
-    fireEvent.click(screen.getByText(/fetch repos/i));
+    global.fetch = vi.fn().mockResolvedValueOnce({
+      ok: false,
+      json: async () => ({}),
+    });
 
-    await waitFor(() => screen.getByText(/not found/i));
-    expect(screen.getByText(/not found/i)).toBeInTheDocument();
+    render(<DevProfileDashboard />);
+    const input = screen.getByPlaceholderText(/Enter GitHub username/i);
+    const button = screen.getByText(/Fetch Repos/i);
+
+    fireEvent.change(input, { target: { value: 'invaliduser' } });
+    fireEvent.click(button);
+
+    await waitFor(
+      () => {
+        expect(screen.getByText('GitHub user not found')).toBeInTheDocument();
+      },
+      { timeout: 2000 }
+    );
   });
 });
