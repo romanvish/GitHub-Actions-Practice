@@ -1,24 +1,35 @@
-import { useEffect, useState } from "react";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import  Card from "@mui/material/Card";
+import  Input  from "@mui/material/Input";
+import  Button  from "@mui/material/Button";
 
-export default function DevProfileDashboard() {
-  const [username, setUsername] = useState("");
-  const [repos, setRepos] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+interface Repo {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string | null;
+}
 
-  const fetchRepos = async () => {
+export default function DevProfileDashboard(): JSX.Element {
+  const [username, setUsername] = useState<string>("");
+  const [repos, setRepos] = useState<Repo[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string>("");
+
+  const fetchRepos = async (): Promise<void> => {
     setLoading(true);
     setError("");
     try {
       const response = await fetch(`https://api.github.com/users/${username}/repos`);
       if (!response.ok) throw new Error("GitHub user not found");
-      const data = await response.json();
+      const data: Repo[] = await response.json();
       setRepos(data);
-    } catch (error) {
-      setError(error.message);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        setError("An unknown error occurred.");
+      }
       setRepos([]);
     } finally {
       setLoading(false);
@@ -32,7 +43,7 @@ export default function DevProfileDashboard() {
         <Input
           placeholder="Enter GitHub username"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)}
         />
         <Button onClick={fetchRepos}>Fetch Repos</Button>
       </div>
