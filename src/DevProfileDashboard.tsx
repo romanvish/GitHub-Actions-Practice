@@ -10,7 +10,7 @@ interface Repo {
   description: string | null;
 }
 
-export default function DevProfileDashboard(): JSX.Element {
+export default function DevProfileDashboard(): React.JSX.Element {
   const [username, setUsername] = useState<string>("");
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
