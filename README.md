@@ -1,4 +1,5 @@
-# [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
+# Vue 3 Resume Template by Roman Vish
+Original Design by: [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
 
 This theme has a simple and clean layout designed for creating user-friendly resumes or CV landing pages. It's built using Vue 3.0 (Composition API) and Bootstrap 5, presenting a cohesive one-page layout that blends functionality and aesthetics.
 
@@ -17,14 +18,6 @@ Key features:
 ## Preview
 
 Check out a live version of the template **[here](https://ryanbalieiro.github.io/vue-resume-template/).**
-
-### 1. Desktop Screenshots
-
-![alt desktop](screenshots/desktop-previews.png)
-
-### 2. Mobile Screenshots
-
-![alt mobile](screenshots/mobile-previews.png)
 
 ## Getting Started
 
@@ -69,10 +62,6 @@ $primary: #13a452; /** changing the 'primary' color to green **/
 $dark: #021307; /** changing the 'dark' color to a dark shade of green **/
 $background-color: #f8fff8; 
 ```
-
-Resulting in:
-
-![alt green](screenshots/color-changing-preview.png)
 
 ### 3. Adding and removing languages
 
@@ -246,7 +235,8 @@ This step serves as a solution to the problem discussed in detail at https://sta
 
 ## About
 
-This template was created by and is maintained by **[Ryan Balieiro](https://ryanbalieiro.com/)**.
+This template was modified for Vue use by **[Roman Vish](https://github.com/romanvish)**.
+This template was created by **[Ryan Balieiro](https://ryanbalieiro.com/)**.
 
 It's based on the [Bootstrap](https://getbootstrap.com/) framework created by Mark Otto and Jacob Thorton; and the [Vue](https://vuejs.org/) framework created by Evan You.
 
