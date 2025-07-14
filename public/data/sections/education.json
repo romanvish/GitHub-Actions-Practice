@@ -1,0 +1,37 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Educational</span> Background",
+            "description": "A look into my academic history and accomplishments."
+        }
+    },
+
+    "items": [
+        {
+            "id": "byu_bachelors",
+            "place": "@link{places.byuSchool}",
+            "period": ["2017/08", "2023/04"],
+
+            "locales": {
+                "en": {
+                    "title": "Bachelor's of Science in Computer Engineering",
+                    "description": "Built a strong foundation of knowledge in computer engineering, including software development, computer architecture, and digital systems design. Completed a variety of projects ranging from embedded systems and kernel development to web design and cloud computing. Minors in Computer Science, Math, Cybersecurity, and Physics."
+                }
+            }
+        },
+
+        {
+            "id": "gt_masters",
+            "place": "@link{places.gt}",
+            "period": ["2023/08", "2024/07"],
+
+            "locales": {
+                "en": {
+                    "title": "Master of Science in Electrical and Computer Engineering",
+                    "description": "Emphases in Networks, Computer Systems and Software, and Machine Learning. Worked on a variety of projects, including AI, computer vision, and cloud computing."
+                }
+            }
+        }
+
+    ]
+}

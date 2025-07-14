@@ -1,45 +1,35 @@
 {
-  "name": "githubactionsexample",
+  "name": "vue-resume-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint --ext .js src/**/*.js src/**/**/*.vue src/**/*.vue",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "deploy": "cd dist && cp index.html 404.html"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.2.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.3.3",
+    "swiper": "^10.0.4",
+    "vue": "^3.2.47",
+    "vue-chartjs": "^5.2.0",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@jest/globals": "^30.0.3",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.2",
-    "eslint": "^9.29.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.2.0",
-    "jest": "^30.0.3",
+    "@testing-library/vue": "^8.1.0",
+    "@vitejs/plugin-vue": "^4.6.2",
+    "eslint": "^9.31.0",
+    "eslint-plugin-vue": "^10.3.0",
     "jsdom": "^26.1.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.34.1",
-    "vite": "^7.0.0",
+    "sass": "^1.62.1",
+    "vite": "^4.3.2",
     "vitest": "^3.2.4"
-  },
-  "vitest": {
-    "globals": true,
-    "environment": "jsdom"
-  },
-  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f"
+  }
 }

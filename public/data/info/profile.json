@@ -1,0 +1,69 @@
+{
+    "name": "Roman Vish",
+    "profilePictureUrl": "images/pictures/avatar.png",
+
+    "locales": {
+        "en": {
+            "credits": "Designed by <strong><a class='light' href='https://github.com/romanvish'>Roman Vish</a></strong>",
+            "role": "Software and Infrastructure Specialist"
+        }
+    },
+
+    "contact": {
+        "address": {
+            "id": "address",
+            "value": "Provo, UT 84606",
+            "valueShort": "Provo, UT 84606",
+            "faIcon": "fa-solid fa-city",
+            "href": null
+        },
+
+        "email": {
+            "id": "email",
+            "value": "jonas.einstein@genius.com",
+            "valueShort": "jonas.einstein@genius.com",
+            "faIcon": "fa-solid fa-envelope",
+            "href": "mailto:jonas.einstein@genius.com"
+        },
+
+        "facebook": {
+            "id": "facebook",
+            "value": "Jonas Einstein",
+            "valueShort": "J. Einstein",
+            "faIcon": "fa-brands fa-facebook",
+            "href": "https://facebook.com"
+        },
+
+        "github": {
+            "id": "github",
+            "value": "@romanvish",
+            "valueShort": "@romanvish",
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/romanvish"
+        },
+
+        "instagram": {
+            "id": "instagram",
+            "value": "@jonas.einstein.official",
+            "valueShort": "@jonas.einstein.official",
+            "faIcon": "fa-brands fa-instagram",
+            "href": "https://instagram.com"
+        },
+
+        "linkedin": {
+            "id": "linkedin",
+            "value": "@Roman Vish",
+            "valueShort": "@Roman Vish",
+            "faIcon": "fa-brands fa-linkedin",
+            "href": "https://linkedin.com/in/romanvish"
+        },
+
+        "phone": {
+            "id": "phone",
+            "value": "+1 (123) 456-7890",
+            "valueShort": "(123) 456-7890",
+            "faIcon": "fa-solid fa-phone",
+            "href": "tel:1234567890"
+        }
+    }
+}

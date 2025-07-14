@@ -1,18 +1,19 @@
+// .eslintrc.cjs
 module.exports = {
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  root: true,
+  env: {
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+  ],
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
-  settings: {
-    react: {
-      version: "detect"
-    }
+    sourceType: 'module',
   },
   rules: {
-    "react/prop-types": "off"
-  }
-};
+    // Customize your rules here
+    'vue/multi-word-component-names': 'off',
+  },
+}

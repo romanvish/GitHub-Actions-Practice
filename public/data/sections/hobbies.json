@@ -1,0 +1,139 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Hobbies</span> & Interests",
+            "description": "This is pretty much how I spend my free time:"
+        }
+    },
+
+    "subcategories": [
+        {
+            "id": "activities",
+            "type": "pie",
+            "progress": "number",
+            "faIcon": "fa-solid fa-clock",
+            "locales": {
+                "en": {"title": null}
+            }
+        },
+
+        {
+            "id": "interests",
+            "type": "list",
+            "progress": null,
+            "faIcon": "fa fa-book-open-reader",
+            "locales": {
+                "en": {"title": "Interests"}
+            }
+        }
+    ],
+
+    "items": {
+        "activities": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-users",
+                "value": 33,
+                "locales": {
+                    "en": {"title": "Family & Friends", "description": "Time spent with people I enjoy."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-tasks",
+                "value": 17,
+                "locales": {
+                    "en": {"title": "My Projects", "description": "Trying out new things at home."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-couch",
+                "value": 16,
+                "locales": {
+                    "en": {"title": "Relaxing", "description": "Binging sitcoms or perhaps taking a nap"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-book",
+                "value": 16,
+                "locales": {
+                    "en": {"title": "Studying", "description": "Embarking on a continuous journey of learning."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-dumbbell",
+                "value": 17,
+                "locales": {
+                    "en": {"title": "Sports", "description": "Watching football and basketball, playing volleyball and pickleball."}
+                }
+            }
+        ],
+
+        "interests": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-volleyball",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Machine Vision and Segmentation",
+                        "description": "Developing my skills in object segmentation, especially in sports, and using this data to improve player performance."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-fingerprint",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Cybersecurity", "description": "Interest in cryptography, especially the math behind it, as well as web security and hardware security. It's like a fun puzzle."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-chart-bar",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Data Analysis", "description": "I don't believe numbers tell the full story, but you can certainly find some things you didn't know were there."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-cogs",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Automation", "description": "I love being able to script away tasks from my developing experience, it makes me feel like I'm Iron Man and no I will not elaborate."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-desktop",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Software Development", "description": "I think it's super fulfilling to be able to go from a vision in my head to a tangible product that people can use."}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-project-diagram",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Project Management", "description": "I'm trying to become more organized with my projects, so I'm trying to learn more about the best practices in the industry."}
+                }
+            }
+        ]
+
+    }
+}

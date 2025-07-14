@@ -1,0 +1,57 @@
+{
+    "byuSchool": {
+        "logoUrl": "images/places/logo-byu1.png",
+        "faIcon": "fas fa-university",
+        "locales": {
+            "en": {"name": "BYU"}
+        }
+    },
+
+    "byuWork": {
+        "logoUrl": "images/places/logo-byu1.png",
+        "faIcon": "fas fa-university",
+        "locales": {
+            "en": {"name": "BYU"}
+        }
+    },
+
+    "areaI": {
+        "logoUrl": "images/places/logo-areai.png",
+        "faIcon": "fas fa-drone",
+        "locales": {
+            "en": {"name": "Area-I"}
+        }
+    },
+
+    "sandia": {
+        "logoUrl": "images/places/logo-sandia.png",
+        "faIcon": "fas fa-building-lock",
+        "locales": {
+            "en": {"name": "Sandia National Lab"}
+        }
+    },
+
+    "church": {
+        "logoUrl": null,
+        "faIcon": "fas fa-church",
+        "locales": {
+            "en": {"name": "The Church of Jesus Christ of Latter-day Saints"}
+        }
+    },
+
+    "anduril": {
+        "logoUrl": "images/places/logo-anduril.png",
+        "faIcon": "fas fa-drone",
+        "locales": {
+            "en": {"name": "Anduril Industries"}
+        }
+    },
+
+    "gt": {
+        "logoUrl": "images/places/logo-gt1.png",
+        "faIcon": "fas fa-university",
+        "locales": {
+            "en": {"name": "Georgia Tech"}
+        }
+    }
+}

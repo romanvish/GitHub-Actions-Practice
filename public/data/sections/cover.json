@@ -1,0 +1,20 @@
+{
+    "locales": {
+        "en": {
+            "welcome": "Welcome to my <span class='text-primary'>Resume!</span>",
+            "welcomeShort": "Welcome!",
+            "bio": "I love solving problems, and I've gotten pretty good at using computers to solve them. That's what I love about being a computer engineer. I've been able to study a bunch of different coding languages and other technologies, and have been able to pick up some more at my various jobs. I love creating and building and all the ways out there to create cool and interesting things!"
+        }
+    },
+
+    "items": {
+        "socialCircles": [
+            "@link{profile.contact.linkedin}",
+            "@link{profile.contact.github}"
+        ],
+
+        "contactListItems": [
+            "@link{profile.contact.address}"
+        ]
+    }
+}
