@@ -1,0 +1,272 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Skill</span> Set",
+            "description": "Here are some specific skills I'd like to highlight:"
+        }
+    },
+
+    "subcategories": [
+        {
+            "id": "abilities",
+            "type": "grid",
+            "progress": null,
+            "faIcon": "fa-solid fa-square",
+            "locales": {
+                "en": {"title": null}
+            }
+        },
+
+        {
+            "id": "programming",
+            "type": "grid",
+            "progress": "number",
+            "faIcon": "fa fa-code",
+            "locales": {
+                "en": {"title": "Programming"}
+            }
+        },
+
+        {
+            "id": "languages",
+            "type": "list",
+            "progress": {"0": "beginner", "20": "rookie", "40": "intermediate", "60": "advanced", "80": "fluent", "100": "native"},
+            "faIcon": "fa fa-language",
+            "locales": {
+                "en": {"title": "Languages"}
+            }
+        },
+
+        {
+            "id": "extra",
+            "type": "grid",
+            "progress": null,
+            "faIcon": "fa fa-marker",
+            "locales": {
+                "en": {"title": "List of Skills by Category"}
+            }
+        }
+    ],
+
+    "items": {
+        "abilities": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-github-square",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "DevSecOps General Purpose Programming",
+                        "description": "Proficient in crafting adaptable layouts for diverse devices, ensuring optimal user experience."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-robot",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Machine Learning",
+                        "description": "Masterful at creating captivating designs, blending color theory, typography, layout, and balance for effective messaging."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-jenkins",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Automation and Tooling",
+                        "description": "Skilled in creating detailed wireframes to visualize and plan user interfaces, effectively laying the foundation for intuitive design."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-docker",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Cloud Computing",
+                        "description": "Enhancing user experiences through comprehensive usability testing."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-database",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Full Stack Development",
+                        "description": "Proficient in creating intuitive and seamless interactions for user-friendly experiences, harmonizing aesthetics and usability."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-laptop-code",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Product Design and Architecting",
+                        "description": "Skilled in translating concepts into interactive prototypes for testing and refinement."
+                    }
+                }
+            }
+        ],
+
+        "programming": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-linux",
+                "value": 85,
+                "locales": {
+                    "en": {"title": "C/C++", "description": "Experience Time: 6 years"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-python",
+                "value": 85,
+                "locales": {
+                    "en": {"title": "Python", "description": "Experience Time: 3 years"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-java",
+                "value": 70,
+                "locales": {
+                    "en": {"title": "Java", "description": "Experience Time: 2 years"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-google",
+                "value": 60,
+                "locales": {
+                    "en": {"title": "Flutter", "description": "Experience Time: 1 year"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-vuejs",
+                "value": 60,
+                "locales": {
+                    "en": {"title": "Vue 3", "description": "Experience Time: 1 year"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-aws",
+                "value": 70,
+                "locales": {
+                    "en": {"title": "AWS", "description": "Experience time: 1 year"}
+                }
+            }
+        ],
+
+        "languages": [
+            {
+                "imageIconUrl": "images/flags/en.png",
+                "faIcon": null,
+                "value": 100,
+                "locales": {
+                    "en": {"title": "English", "description": "Native speaker with excellent communication and writing skills."}
+                }
+            },
+
+            {
+                "imageIconUrl": "images/flags/pt.png",
+                "faIcon": null,
+                "value": 90,
+                "locales": {
+                    "en": {"title": "Brazilian Portuguese", "description": "Conversationally fluent in Portuguese, with a strong understanding of grammar and vocabulary."}
+                }
+            },
+
+            {
+                "imageIconUrl": "images/flags/es.png",
+                "faIcon": null,
+                "value": 40,
+                "locales": {
+                    "en": {"title": "Spanish", "description": "Can understand most conversational Spanish, and read and write basic Spanish."}
+                }
+            },
+
+            {
+                "imageIconUrl": "images/flags/it.png",
+                "faIcon": null,
+                "value": 10,
+                "locales": {
+                    "en": {"title": "Italian", "description": "Basic understanding of Italian, trying to learn new words every day and I'm working on the grammar."}
+                }
+            }
+
+        ],
+
+        "extra": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-node",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Full Stack Development", "description": "Vue.js, React-native, Flutter, Typescript, C#, Node.js, RESTful API, FastAPI, Java, Python, MongoDB, PostgreSQL"}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-jira",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Coding Practices", "description": "DevSecOps, Agile, Scrum, Kanban, Git, Documentation, Testing, Selenium"}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-python",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Machine Learning", "description": "Python, Torch, Torchvision, SK-learn, Pandas, Jupyter, Neural Networks, Clustering, Regression, Classification, Data Engineering, Data Cleaning, Visualization, R, Statistics, CUDA"}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-cloud",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Cloud Computing", "description": "AWS, Azure, Docker, Kubernetes, Okta, Terraform"}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-server",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Low-level languages and Hypervisors", "description": "C/C++, x86 Assembly, RISC, FPGA, SystemVerilog, Ghidra, VMware vSphere, ESXi, Proxmox"}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-network-wired",
+                "value": null,
+                "locales": {
+                    "en": {"title": "Networking", "description": "Routing, Switching, Firewalls, DNS, DHCP, NAT, TCP/IP, Subnetting, NMAP, TLS, Red Teaming"}
+                }
+            }
+        ]
+    }
+}

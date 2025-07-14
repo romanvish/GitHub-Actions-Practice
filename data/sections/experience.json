@@ -1,0 +1,75 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Professional</span> Experience",
+            "description": "My work history"
+        }
+    },
+
+    "items": [
+        {
+            "id": "experience_item_1",
+            "place": "@link{places.areaI}",
+            "period": ["2020/04", "2020/08"],
+            "locales": {
+                "en": {
+                    "title": "Software Engineering Intern",
+                    "description": "Wrote original drone configuration software to optimize flight-readiness configuration time. Managed the IMU firmware and repository to ensure the IMU software was ready to go. Wrote data analysis scripts to parse and visualize flight test data.",
+                    "tags": ["C/C++", "Python", "Networking", "Software development lifecycle", "Presentations"]
+                }
+            }
+        },
+
+        {
+            "id": "experience_item_2",
+            "place": "@link{places.anduril}",
+            "period": ["2021/04", "2021/08"],
+            "locales": {
+                "en": {
+                    "title": "Software Engineering Intern",
+                    "description": "Wrote original drone configuration software to optimize flight-readiness configuration time. Managed the IMU firmware and repository to ensure the IMU software was ready to go. Wrote data analysis scripts to parse and visualize flight test data. (Worked at the same place, got all my projects back, company got acquired)",
+                    "tags": ["C/C++", "Python", "Networking", "Software development lifecycle", "Presentations"]
+                }
+            }
+        },
+
+        {
+            "id": "experience_item_3",
+            "place": "@link{places.church}",
+            "period": ["2022/05", "2022/08"],
+            "locales": {
+                "en": {
+                    "title": "Cloud Security Intern",
+                    "description": "Helped secure cloud infrastructure for millions of users, and thousands of cloud apps. Developed automated scripts to decrease time spent doing repeated actions. Worked on help tickets to federate apps using SAML or OAuth, as well as helping users with their accounts.",
+                    "tags": ["Python", "Azure", "LDAP", "SAML", "Okta", "Active Directory"]
+                }
+            }
+        },
+
+        {
+            "id": "experience_item_4",
+            "place": "@link{places.sandia}",
+            "period": ["2023/05", "2023/08"],
+            "locales": {
+                "en": {
+                    "title": "Research and Development Engineer",
+                    "description": "Created VS Code extensions to help automate the process of static code analysis. Expanded existing FASTAPI library to assist in the gathering and analysis of publically available resources.",
+                    "tags": ["Python", "Docker", "C#", "Ghidra", "strace"]
+                }
+            }
+        },
+
+        {
+            "id": "experience_item_5",
+            "place": "@link{places.byuWork}",
+            "period": ["2025/01", "now"],
+            "locales": {
+                "en": {
+                    "title": "Software and Infrastructure Specialist",
+                    "description": "Created infrastructure to help organize the Electrical and Computer Engineering department. Collaborated with faculty to create enriching labs for students, then programmed the labs. Rebuilt the Cybersecurity department's server infrastructure.",
+                    "tags": ["Python", "Proxmox", "Full-Stack Development", "Networking", "Server Management"]
+                }
+            }
+        }
+    ]
+}
