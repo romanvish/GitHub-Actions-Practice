@@ -5,6 +5,7 @@
 import {useData} from "../composables/data.js"
 import RouterView from "../vue/core/RouterView.vue"
 import {createRouter, createWebHistory} from "vue-router"
+import NotFound from "./NotFound.vue"
 
 export function createAppRouter() {
     const data = useData()
@@ -32,7 +33,8 @@ export function createAppRouter() {
     /** Wildcard Route **/
     routeList.push({
         path: "/:pathMatch(.*)*",
-        redirect: '/'
+        // redirect: '/'
+        component: NotFound
     })
 
     return createRouter({
